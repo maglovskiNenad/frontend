@@ -2,14 +2,14 @@ const theme = {
   initialColorMode: "light",
   colors: {
     text: "black",
-    background: "white",
-    primary: "#282c34",
+    background: "#dcdee3",
+    primary: "#121317",
     inverseText: "white",
     modes: {
       dark: {
-        text: "white",
-        background: "#0f172a",
-        primary: "#282c34",
+        text: "#dcdee3",
+        background: "#121317",
+        primary: "#121317",
         inverseText: "green",
       },
     },
