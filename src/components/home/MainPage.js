@@ -1,12 +1,10 @@
 import React from "react";
+import HtmlPage from "../../page/HtmlPage/HtmlPage";
+
+import "./MainPage.css";
 
 const MainPage = () => {
-  return (
-    <p>
-      Ovo je napravljeno da bi mogli da vidimo kakav ce tekst da bude na svemu
-      tome{" "}
-    </p>
-  );
+  return <HtmlPage />;
 };
 
 export default MainPage;

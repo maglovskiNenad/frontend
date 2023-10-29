@@ -1,9 +1,9 @@
 import React from "react";
 
 import MainPage from "./components/home/MainPage";
+import Navbar from "./components/navbar/Navbar";
 
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
