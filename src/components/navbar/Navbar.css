@@ -1,0 +1,22 @@
+.navbar-wraper {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.moon {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.sun {
+  font-size: 25px;
+  margin-left: -15px;
+}

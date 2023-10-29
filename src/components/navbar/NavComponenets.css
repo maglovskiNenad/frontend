@@ -1,0 +1,22 @@
+.nav-fragment {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+}
+
+.u-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 17%;
+}
+
+.element {
+  list-style: none;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}

@@ -1,15 +1,15 @@
 const theme = {
   initialColorMode: "light",
   colors: {
-    text: "black",
-    background: "#dcdee3",
-    primary: "#121317",
+    text: "black", // text color
+    background: "#dcdee3", // background color
+    primary: "#121317", // switch button color
     inverseText: "white",
     modes: {
       dark: {
-        text: "#dcdee3",
-        background: "#121317",
-        primary: "#121317",
+        text: "#dcdee3", // text color
+        background: "#121317", //background color
+        primary: "#878787", // switch button color
         inverseText: "green",
       },
     },
