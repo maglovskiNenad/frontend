@@ -5,9 +5,10 @@ const NavComponenst = () => {
     <div className="nav-fragment">
       <div className="nav">
         <ul className="u-list">
-          <li className="element">home</li>
-          <li className="element">components</li>
-          <li className="element">creators</li>
+          <li className="element">Home</li>
+          <li className="element">About</li>
+          <li className="element">Components</li>
+          <li className="element">Creators</li>
         </ul>
       </div>
     </div>
