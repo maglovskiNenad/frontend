@@ -20,3 +20,25 @@
   font-size: 1em;
   cursor: pointer;
 }
+
+.burger-menu {
+  display: block;
+  justify-content: center;
+}
+
+.one {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .element {
+    display: none;
+  }
+  .u-list {
+    display: block;
+  }
+}

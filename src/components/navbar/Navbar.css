@@ -2,6 +2,8 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
+  position: sticky;
 }
 
 .btn {
