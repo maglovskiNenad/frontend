@@ -1,12 +1,16 @@
 import React from "react";
 
-const htmlMain = (props) => {
+const HtmlMainPage = (props) => {
   return (
-    <div className="html-wrpaer">
-      <h3 className="h3">{props.description}</h3>
-      <p className="p">{props.text}</p>
+    <div className="html-wraper">
+      <div className="h3-wraper">
+        <div className="h3">{props.description}</div>
+      </div>
+      <div className="p-wraper">
+        <div className="p">{props.text}</div>
+      </div>
     </div>
   );
 };
 
-export default htmlMain;
+export default HtmlMainPage;

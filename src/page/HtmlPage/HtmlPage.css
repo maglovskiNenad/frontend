@@ -1,0 +1,16 @@
+.html-wraper {
+  display: flex;
+  align-items: center;
+  border: 1px white white;
+}
+
+.h3-wraper {
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 5px;
+}
+
+.p-wraper {
+  word-break: break-word;
+}
