@@ -1,16 +1,21 @@
-.html-wraper {
+.main-html-wraper {
   display: flex;
   align-items: center;
-  border: 1px white white;
+  justify-content: center;
+  gap: 5%;
 }
 
-.h3-wraper {
-  display: block;
-  width: 50%;
+.html-description {
+  width: 10%;
+  padding: 10px;
+  align-items: center;
+}
+
+.block {
+  margin: 5px 0;
+}
+
+.main-description {
   text-align: center;
-  margin: 5px;
-}
-
-.p-wraper {
-  word-break: break-word;
+  margin: 5px 0;
 }

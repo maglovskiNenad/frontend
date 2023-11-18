@@ -14,7 +14,7 @@ const Navbar = () => {
   const handlingDisplaySize = () => {
     //ovom funkcijom dobijas dimenziju ekrana pokusaj da na to odreaguje nav bar
     let width = window.innerWidth;
-    console.log(width);
+    //console.log(width);
   };
 
   const handleThemeChange = () => {
