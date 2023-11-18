@@ -1,7 +1,7 @@
 export const HTML_DATA = [
   {
     description: "<!DOCTYPE>",
-    text: "The declaration is not an HTML tag. It is an information to the browser about what document type to expect.",
+    text: "The <!DOCTYPE> declaration is an instruction used in HTML (Hypertext Markup Language) documents to specify the document type and version of HTML being used. It stands for 'Document Type Definition.' The <!DOCTYPE> declaration is placed at the very beginning of an HTML document, before the <html> tag.The purpose of the <!DOCTYPE> declaration is to inform the web browser about the version of HTML in which the document is written. It helps the browser to render the page correctly by following the specified rules and standards associated with that HTML version. The <!DOCTYPE> declaration is not an HTML tag; rather, it is a directive to the browser.",
     id: 1,
   },
   {
