@@ -6,13 +6,10 @@
 }
 
 .html-description {
-  width: 10%;
-  padding: 10px;
+  display: flex;
   align-items: center;
-}
-
-.block {
-  margin: 5px 0;
+  justify-content: center;
+  margin: 0 10px;
 }
 
 .main-description {
