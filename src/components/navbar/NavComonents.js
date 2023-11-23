@@ -11,10 +11,10 @@ const NavComponenst = () => {
             <span className="one"></span>
           </li>
 
-          <li className="element">Home</li>
-          <li className="element">About</li>
-          <li className="element">Components</li>
-          <li className="element">Creators</li>
+          <li className="element animtaion no-blur">Home</li>
+          <li className="element animtaion no-blur">About</li>
+          <li className="element animtaion no-blur">Components</li>
+          <li className="element animtaion no-blur">Creators</li>
         </ul>
       </div>
     </div>

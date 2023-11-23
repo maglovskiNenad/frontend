@@ -34,6 +34,15 @@
   border-radius: 5px;
 }
 
+.u-list:hover .no-blur {
+  filter: blur(5px);
+  transition: 0.5s ease-in-out;
+}
+
+.u-list .no-blur:hover {
+  filter: blur(0);
+}
+
 @media screen and (max-width: 600px) {
   .element {
     display: none;
