@@ -22,3 +22,11 @@
   font-size: 25px;
   margin-left: -15px;
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}

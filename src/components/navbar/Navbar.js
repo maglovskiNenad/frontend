@@ -8,14 +8,6 @@ import "./Navbar.css";
 const Navbar = () => {
   const [colorMode, setColorMode] = useColorMode();
   const [state, setState] = useState();
-  //reaguje na sve ekrane podesi da REAGUJE SAMO NA MALE EKRANE,dodaj animaciju
-  const [showMenu, setShowMenu] = useState();
-
-  const handlingDisplaySize = () => {
-    //ovom funkcijom dobijas dimenziju ekrana pokusaj da na to odreaguje nav bar
-    let width = window.innerWidth;
-    //console.log(width);
-  };
 
   const handleThemeChange = () => {
     setColorMode(colorMode === "light" ? "dark" : "light");
@@ -26,12 +18,6 @@ const Navbar = () => {
     setColorMode(colorMode === "light" ? "light" : "dark");
     setState(colorMode === "light" ? "light" : "dark");
   }, []);
-
-  const handleNavMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  handlingDisplaySize();
 
   return (
     <div className="navbar-wraper">
