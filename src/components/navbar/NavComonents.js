@@ -48,12 +48,15 @@ const NavComponenst = () => {
     console.log(width);
   }, [width]);
 
+  const CONDITION_MENU_VISABILITY = burgerMenuIsVisible ? BURGER_MENU : "";
+  const OPENING_BURGER_MENU = openBurgerMenu ? NAVBAR_LIST : "";
+
   return (
     <div className="nav-fragment">
       <div className="nav">
         <ul className="u-list">
-          {burgerMenuIsVisible ? BURGER_MENU : ""}
-          {openBurgerMenu ? NAVBAR_LIST : ""}
+          {CONDITION_MENU_VISABILITY}
+          {OPENING_BURGER_MENU}
         </ul>
       </div>
     </div>
