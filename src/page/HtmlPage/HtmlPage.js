@@ -30,8 +30,9 @@ const HtmlPage = () => {
 
   return (
     <div className="main-html-wraper">
-      <div className="html-description">{description}</div>
-      <div className="html-text">{text}</div>
+      <p>html page</p>
+      {/* <div className="html-description">{description}</div>
+      <div className="html-text">{text}</div> */}
     </div>
   );
 };

@@ -8,9 +8,6 @@ const NavComponenst = () => {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(true);
   const [burgerMenuIsVisible, setBurgerMenuIsVisible] = useState(true);
 
-  // dobija velicnu na svaku promenu
-  const { width } = useWindowSize();
-
   const burgerMenuHandler = () => {
     setOpenBurgerMenu(!openBurgerMenu);
   };
@@ -32,7 +29,6 @@ const NavComponenst = () => {
     </li>
   );
 
-  // grska se pojavljuje kada se naglo menjaju velicine ekrana ili kad se sa malog ekrana azurira stranica na veliki
   const handlingDisplaySize = (width) => {
     if (width > 600) {
       setBurgerMenuIsVisible(!burgerMenuIsVisible);
@@ -43,9 +39,10 @@ const NavComponenst = () => {
     }
   };
 
+  const { width } = useWindowSize();
+
   useEffect(() => {
     handlingDisplaySize(width);
-    console.log(width);
   }, [width]);
 
   const CONDITION_MENU_VISABILITY = burgerMenuIsVisible ? BURGER_MENU : "";
