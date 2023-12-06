@@ -1,3 +1,19 @@
 .main {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.main-navbar {
+  width: 10%;
+  border: 1px solid white;
+}
+
+.routes {
+  width: 80%;
+  border: 1px solid white;
 }

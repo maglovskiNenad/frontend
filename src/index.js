@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeUIProvider } from "theme-ui";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "./index.css";
 import theme from "./UI/them";
+
+import App from "./App";
+
+import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeUIProvider theme={theme}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeUIProvider>
   </React.StrictMode>
 );

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
 import { useWindowSize } from "react-use";
 
 import "./NavComponenets.css";
@@ -14,10 +15,26 @@ const NavComponenst = () => {
 
   const NAVBAR_LIST = (
     <React.Fragment>
-      <li className="element animtaion no-blur">Home</li>
-      <li className="element animtaion no-blur">About</li>
-      <li className="element animtaion no-blur">Components</li>
-      <li className="element animtaion no-blur">Creators</li>
+      <li className="li">
+        <Link to={"/"} className="element animtaion no-blur">
+          Home
+        </Link>
+      </li>
+      <li className="li">
+        <Link to={"/about"} className="element animtaion no-blur">
+          About
+        </Link>
+      </li>
+      <li className="li">
+        <Link to={"/components"} className="element animtaion no-blur">
+          Components
+        </Link>
+      </li>
+      <li className="li">
+        <Link to={"/creators"} className="element animtaion no-blur">
+          Creators
+        </Link>
+      </li>
     </React.Fragment>
   );
 
@@ -51,10 +68,10 @@ const NavComponenst = () => {
   return (
     <div className="nav-fragment">
       <div className="nav">
-        <ul className="u-list">
+        <div className="u-list">
           {CONDITION_MENU_VISABILITY}
           {OPENING_BURGER_MENU}
-        </ul>
+        </div>
       </div>
     </div>
   );

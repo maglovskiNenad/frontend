@@ -1,7 +1,7 @@
 import "./About.css";
 
 const About = () => {
-  <p>About</p>;
+  return <p>About</p>;
 };
 
 export default About;

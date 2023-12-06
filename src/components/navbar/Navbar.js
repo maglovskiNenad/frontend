@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar-wraper">
+    <div className="navbar-wraper border">
       <NavComponenst />
       <div className="btn">
         <BiSolidMoon className="moon" />

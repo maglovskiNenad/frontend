@@ -11,14 +11,21 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  gap: 17%;
+  gap: 10%;
+  margin-left: 25px;
+}
+
+li {
+  list-style: none;
 }
 
 .element {
   list-style: none;
-  font-weight: bold;
   font-size: 1.1em;
   cursor: pointer;
+  text-decoration: none;
+  color: #8d8d8d;
+  letter-spacing: 1px;
 }
 
 .burger-menu {
@@ -35,6 +42,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .u-list {
+    display: block;
+    gap: 5%;
+  }
+
+  .li {
+    margin: 20px 0;
+  }
+
   .burger-menu {
     visibility: none;
     display: block;
@@ -43,10 +59,6 @@
     margin: 30px 0 0 0;
     width: 35px;
     height: 32px;
-  }
-
-  .element {
-    margin: 25px 0;
   }
 
   .one {
@@ -63,10 +75,5 @@
 
   .three {
     margin-top: 20px;
-  }
-
-  .u-list {
-    display: block;
-    gap: 5%;
   }
 }

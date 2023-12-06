@@ -23,6 +23,11 @@
   margin-left: -15px;
 }
 
+.border {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 2;
+}
+
 @media screen and (max-width: 600px) {
   .btn {
     position: absolute;
