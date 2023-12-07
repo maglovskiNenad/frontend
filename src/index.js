@@ -11,13 +11,13 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <ThemeUIProvider theme={theme}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ThemeUIProvider>
-  </React.StrictMode>
+  </React.Fragment>
 );
 
 reportWebVitals();

@@ -1,7 +1,49 @@
+import creatorNumOne from "../../images/nenad.png";
+import creatorNumTwo from "../../images/edi.png";
+
 import "./Creators.css";
 
 const Creators = () => {
-  return <p>Creators</p>;
+  const mouseMove = () => {
+    const ticketElm = document.getElementById("ticket");
+    const { x, y, width, height } = ticketElm.getBoundingClientRect();
+
+    const centerPoint = { x: x + width / 2, y: y + height / 2 };
+    window.addEventListener("mousemove", (e) => {
+      const degreeX = (e.clientY - centerPoint.y) * 0.1;
+      const degreeY = (e.clientX - centerPoint.x) * -0.1;
+
+      ticketElm.style.transform = `perspective(1000px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`;
+    });
+  };
+  // const mouseMove = window.addEventListener("mousemove", (e) => {});
+
+  return (
+    <div className="creators">
+      <div className="ticket-visual_visual" id="ticket">
+        <div className="left"></div>
+        <div className="right"></div>
+        <div className="ticket-visual-wrapper" onMouseMove={mouseMove}>
+          <div className="nenad-creator">
+            <img
+              src={creatorNumOne}
+              className="creator-num-one shadow"
+              alt="creator-num-one"
+            />
+            <p>neki tekst</p>
+          </div>
+          <div className="edi-creator">
+            <img
+              src={creatorNumTwo}
+              className="creator-num-two shadow"
+              alt="creator num two"
+            />
+            <p>Neki tekst</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Creators;

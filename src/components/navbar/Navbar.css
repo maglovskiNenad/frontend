@@ -24,8 +24,9 @@
 }
 
 .border {
-  border-top: 3px solid;
+  border-bottom: solid;
   border-image: linear-gradient(to right, darkblue, darkorchid) 2;
+  border-width: 4px;
 }
 
 @media screen and (max-width: 600px) {

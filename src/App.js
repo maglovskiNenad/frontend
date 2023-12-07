@@ -7,6 +7,7 @@ import About from "./page/About/About";
 import Creators from "./page/Creators/Creators";
 import Components from "./page/Components/Components";
 import MainPageNavbar from "./components/home/MainPageNavbar";
+import { Fade } from "react-reveal";
 
 import "./App.css";
 
@@ -15,18 +16,22 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="main">
-        <div className="main-navbar">
-          <MainPageNavbar />
-        </div>
-        <div className="routes">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/creators" element={<Creators />} />
-            <Route path="/components" element={<Components />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </div>
+        <Fade left duration={1500}>
+          <div className="main-navbar">
+            <MainPageNavbar />
+          </div>
+        </Fade>
+        <Fade right duration={1500}>
+          <div className="routes">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/creators" element={<Creators />} />
+              <Route path="/components" element={<Components />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </div>
+        </Fade>
       </div>
     </div>
   );
