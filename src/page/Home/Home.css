@@ -1,0 +1,21 @@
+.home-page-wraper {
+  width: 90%;
+  word-break: keep-all;
+}
+
+.home-title {
+  width: 100%;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.home-text {
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
