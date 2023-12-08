@@ -43,6 +43,24 @@
   border-radius: 50%;
 }
 
+.description {
+  letter-spacing: 2px;
+  line-height: 0;
+  font-weight: 900;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 2%;
+  font-size: 2em;
+  justify-content: center;
+  margin: 15px 0;
+}
+
 @media screen and (max-width: 600px) {
   .ticket-visual_visual {
     width: 200px;

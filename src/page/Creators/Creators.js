@@ -1,5 +1,6 @@
 import creatorNumOne from "../../images/nenad.png";
 import creatorNumTwo from "../../images/edi.png";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import "./Creators.css";
 
@@ -30,7 +31,15 @@ const Creators = () => {
               className="creator-num-one shadow"
               alt="creator-num-one"
             />
-            <p>neki tekst</p>
+            <div className="description">
+              <p className="name">Nenad Maglovski</p>
+              <p className="role">DevOps</p>
+              <div className="contact-icons">
+                <FaGithub />
+                <FaInstagram />
+                <FaLinkedin />
+              </div>
+            </div>
           </div>
           <div className="edi-creator">
             <img
@@ -38,7 +47,6 @@ const Creators = () => {
               className="creator-num-two shadow"
               alt="creator num two"
             />
-            <p>Neki tekst</p>
           </div>
         </div>
       </div>
