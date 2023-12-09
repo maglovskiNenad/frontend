@@ -47,6 +47,15 @@ const Creators = () => {
               className="creator-num-two shadow"
               alt="creator num two"
             />
+            <div className="description">
+              <p className="name">Edvard Radjenovic</p>
+              <p className="role">Frontend Developer</p>
+              <div className="contact-icons">
+                <FaGithub />
+                <FaInstagram />
+                <FaLinkedin />
+              </div>
+            </div>
           </div>
         </div>
       </div>

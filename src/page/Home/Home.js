@@ -25,12 +25,15 @@ const Home = () => {
           project as well.
         </p>
         <p className="home-text">
-          Of course, this site is not a site that will explain to you how to
+          Of course, this site is not a site that will explain to you how to1
           solve some of the problems you have encountered on your way to a
           front-end development career, but it is certainly a small treasure of
           valuable information that you can certainly remind yourself of how
           some of the elements in the world of programming should you use.
         </p>
+
+        <p className="home-text">So feel free to start your journey.</p>
+        <div className="gradient-color"></div>
       </div>
     </div>
   );

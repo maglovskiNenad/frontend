@@ -19,3 +19,54 @@
   letter-spacing: 1px;
   font-size: 1.5em;
 }
+
+.gradient-color {
+  position: absolute;
+  top: 350px;
+  right: 150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to right, black, darkblue, darkorchid);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  z-index: 100;
+  overflow: hidden;
+  animation: ball 2s ease-in-out infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes ball {
+  from {
+    top: 25%;
+    transform: scaleX(79.5%) scaleY(65%);
+  }
+  to {
+    top: 55%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page-wraper {
+    width: 75%;
+    margin: auto;
+    padding: 0;
+  }
+  .title {
+    font-size: 1em;
+  }
+  .home-text {
+    font-size: 0.8em;
+  }
+
+  @keyframes ball {
+    from {
+      top: 15%;
+      transform: scaleX(79.5%) scaleY(65%);
+    }
+    to {
+      top: 35%;
+    }
+  }
+}
