@@ -7,9 +7,11 @@ import About from "./page/About/About";
 import Creators from "./page/Creators/Creators";
 import Components from "./page/Components/Components";
 import MainPageNavbar from "./components/home/MainPageNavbar";
+import Footer from "./components/footer/Footer";
 import { Fade } from "react-reveal";
 
 import "./App.css";
+import ErrorPage from "./page/Error/ErrorPage";
 
 function App() {
   return (
@@ -28,11 +30,12 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/creators" element={<Creators />} />
               <Route path="/components" element={<Components />} />
-              <Route path="*" element={<Home />} />
+              <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
         </Fade>
       </div>
+      <Footer />
     </div>
   );
 }
