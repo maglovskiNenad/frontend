@@ -1,17 +1,31 @@
 import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
-import { useWindowSize } from "react-use";
+// import { useWindowSize } from "react-use";
 
 import "./NavComponenets.css";
 
 const NavComponenst = () => {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(true);
   const [burgerMenuIsVisible, setBurgerMenuIsVisible] = useState(true);
-
+  console.log(setBurgerMenuIsVisible);
   const burgerMenuHandler = () => {
     setOpenBurgerMenu(!openBurgerMenu);
   };
+
+  // const { width } = useWindowSize();
+
+  // const handlingDisplaySize = (width) => {
+  //   if (width > 600) {
+  //     setBurgerMenuIsVisible(!burgerMenuIsVisible);
+  //     setOpenBurgerMenu(openBurgerMenu);
+  //   } else if (width <= 600) {
+  //     setBurgerMenuIsVisible(burgerMenuIsVisible);
+  //     setOpenBurgerMenu(!openBurgerMenu);
+  //   }
+  // };
+
+  useEffect(() => {}, []);
 
   const NAVBAR_LIST = (
     <React.Fragment>
@@ -45,21 +59,6 @@ const NavComponenst = () => {
       <span className="one three"></span>
     </li>
   );
-
-  const { width } = useWindowSize();
-
-  useEffect(() => {
-    const handlingDisplaySize = (width) => {
-      if (width > 600) {
-        setBurgerMenuIsVisible(!burgerMenuIsVisible);
-        setOpenBurgerMenu(openBurgerMenu);
-      } else if (width <= 600) {
-        setBurgerMenuIsVisible(burgerMenuIsVisible);
-        setOpenBurgerMenu(!openBurgerMenu);
-      }
-    };
-    handlingDisplaySize(width);
-  }, [width]);
 
   const CONDITION_MENU_VISABILITY = burgerMenuIsVisible ? BURGER_MENU : "";
   const OPENING_BURGER_MENU = openBurgerMenu ? NAVBAR_LIST : "";
