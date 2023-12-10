@@ -46,19 +46,18 @@ const NavComponenst = () => {
     </li>
   );
 
-  const handlingDisplaySize = (width) => {
-    if (width > 600) {
-      setBurgerMenuIsVisible(!burgerMenuIsVisible);
-      setOpenBurgerMenu(openBurgerMenu);
-    } else if (width <= 600) {
-      setBurgerMenuIsVisible(burgerMenuIsVisible);
-      setOpenBurgerMenu(!openBurgerMenu);
-    }
-  };
-
   const { width } = useWindowSize();
 
   useEffect(() => {
+    const handlingDisplaySize = (width) => {
+      if (width > 600) {
+        setBurgerMenuIsVisible(!burgerMenuIsVisible);
+        setOpenBurgerMenu(openBurgerMenu);
+      } else if (width <= 600) {
+        setBurgerMenuIsVisible(burgerMenuIsVisible);
+        setOpenBurgerMenu(!openBurgerMenu);
+      }
+    };
     handlingDisplaySize(width);
   }, [width]);
 

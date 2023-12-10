@@ -8,6 +8,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [colorMode, setColorMode] = useColorMode();
   const [state, setState] = useState();
+  console.log(state);
 
   const handleThemeChange = () => {
     setColorMode(colorMode === "light" ? "dark" : "light");
@@ -17,7 +18,7 @@ const Navbar = () => {
   useEffect(() => {
     setColorMode(colorMode === "light" ? "light" : "dark");
     setState(colorMode === "light" ? "light" : "dark");
-  }, []);
+  }, [colorMode, setColorMode]);
 
   return (
     <div className="navbar-wraper border">
