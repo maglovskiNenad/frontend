@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@chakra-ui/cli": "^2.4.1"
+    "@chakra-ui/cli": "^2.4.1",
+    "gh-pages": "^6.1.0"
   }
 }
