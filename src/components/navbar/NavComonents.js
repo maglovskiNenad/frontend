@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
-// import { useWindowSize } from "react-use";
+import { useWindowSize } from "react-use";
 
 import "./NavComponenets.css";
 
@@ -13,19 +13,30 @@ const NavComponenst = () => {
     setOpenBurgerMenu(!openBurgerMenu);
   };
 
-  // const { width } = useWindowSize();
+  const { width } = useWindowSize();
 
-  // const handlingDisplaySize = (width) => {
-  //   if (width > 600) {
-  //     setBurgerMenuIsVisible(!burgerMenuIsVisible);
-  //     setOpenBurgerMenu(openBurgerMenu);
-  //   } else if (width <= 600) {
-  //     setBurgerMenuIsVisible(burgerMenuIsVisible);
-  //     setOpenBurgerMenu(!openBurgerMenu);
-  //   }
-  // };
+  const handlingDisplaySize = (width) => {
+    if (width > 600) {
+      setBurgerMenuIsVisible(!burgerMenuIsVisible);
+      setOpenBurgerMenu(openBurgerMenu);
+    } else if (width <= 600) {
+      setBurgerMenuIsVisible(burgerMenuIsVisible);
+      setOpenBurgerMenu(!openBurgerMenu);
+    }
+  };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handlingDisplaySize = (width) => {
+      if (width > 600) {
+        setBurgerMenuIsVisible(!burgerMenuIsVisible);
+        setOpenBurgerMenu(openBurgerMenu);
+      } else if (width <= 600) {
+        setBurgerMenuIsVisible(burgerMenuIsVisible);
+        setOpenBurgerMenu(!openBurgerMenu);
+      }
+    };
+    handlingDisplaySize(width);
+  }, [width]);
 
   const NAVBAR_LIST = (
     <React.Fragment>
