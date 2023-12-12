@@ -29,8 +29,7 @@ jobs:
           git checkout -b gh-pages
           git config --global user.email "maglovskin@gmail.com"
           git config --global user.name "maglovskiNenad"
-          git add package-lock.json
-          git commit -m "pakage-lock added"
           git add -f build
+          git add package-lock.json
           git commit -m "Deploy to GitHub Pages"
           git push origin gh-pages
