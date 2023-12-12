@@ -26,7 +26,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git branch gh-pages
           git checkout -b gh-pages
           git config --global user.email "maglovskin@gmail.com"
           git config --global user.name "maglovskiNenad"
