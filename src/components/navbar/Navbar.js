@@ -1,33 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { Switch, useColorMode } from "theme-ui";
-import NavComponenst from "./NavComonents";
-import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
+//import React, { useState } from "react";
+import NavbarList from "./NavbarComponents/NavbarList";
+import NavbarBurgerMenu from "./NavbarComponents/NavbarBurgerMenu";
+import NavbarBtnTheme from "./NavbarComponents/NavbarBtnTheme";
 
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [colorMode, setColorMode] = useColorMode();
-  const [state, setState] = useState();
-  console.log(state);
-
-  const handleThemeChange = () => {
-    setColorMode(colorMode === "light" ? "dark" : "light");
-    setState(colorMode === "light" ? "dark" : "light");
-  };
-
-  useEffect(() => {
-    setColorMode(colorMode === "light" ? "light" : "dark");
-    setState(colorMode === "light" ? "light" : "dark");
-  }, [colorMode, setColorMode]);
-
+  //const [burgerMenuIsVisible, setBurgerMenuIsVisible] = useState(true);
   return (
     <div className="navbar-wraper border">
-      <NavComponenst />
-      <div className="btn">
-        <BiSolidMoon className="moon" />
-        <Switch className="switch" onChange={handleThemeChange} />
-        <BiSolidSun className="sun" />
-      </div>
+      <NavbarBurgerMenu />
+      <NavbarList />
+      <NavbarBtnTheme />
     </div>
   );
 };

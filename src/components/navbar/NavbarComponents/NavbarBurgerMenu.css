@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+  .burger-menu {
+    visibility: none;
+    display: block;
+    justify-content: center;
+    padding: 1.2px;
+    margin: 30px 0 0 0;
+    width: 35px;
+    height: 32px;
+  }
+
+  .one {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 5px;
+  }
+
+  .two {
+    margin-top: 10px;
+  }
+
+  .three {
+    margin-top: 20px;
+  }
+}

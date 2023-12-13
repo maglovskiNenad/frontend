@@ -6,7 +6,7 @@ import Home from "./page/Home/Home";
 import About from "./page/About/About";
 import Creators from "./page/Creators/Creators";
 import Components from "./page/Components/Components";
-import MainPageNavbar from "./components/home/MainPageNavbar";
+import MainPageNavbar from "./components/home/MainPageComponents/MainPageNavbar";
 import Footer from "./components/footer/Footer";
 import { Fade } from "react-reveal";
 
@@ -26,11 +26,11 @@ function App() {
         <Fade right duration={1500}>
           <div className="routes">
             <Routes>
+              <Route path="*" element={<ErrorPage />} />
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/creators" element={<Creators />} />
               <Route path="/components" element={<Components />} />
-              <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
         </Fade>

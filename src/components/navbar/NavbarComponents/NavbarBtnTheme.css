@@ -1,0 +1,24 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.moon {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.sun {
+  font-size: 25px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}
