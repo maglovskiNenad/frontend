@@ -1,8 +1,8 @@
+/* Stilovi za mobilni */
 .btn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
+  margin-top: 1.2em;
 }
 
 .moon {
@@ -15,10 +15,14 @@
   margin-left: -15px;
 }
 
-@media screen and (max-width: 600px) {
-  .btn {
-    position: absolute;
-    right: 5px;
-    top: 10px;
-  }
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
 }

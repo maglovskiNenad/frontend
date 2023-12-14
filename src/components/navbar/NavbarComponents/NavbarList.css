@@ -1,18 +1,7 @@
-.nav-fragment {
-  display: flex;
-  align-items: center;
-}
-
-.nav {
-  width: 100%;
-}
-
-.u-list {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  gap: 10%;
-  margin-left: 25px;
+/* Stilovi za mobilni */
+.li {
+  margin: 10px 0;
+  font-size: larger;
 }
 
 li {
@@ -28,22 +17,30 @@ li {
   letter-spacing: 1px;
 }
 
-.u-list:hover .no-blur {
-  filter: blur(5px);
-  transition: 0.5s ease-in-out;
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
 }
 
-.u-list .no-blur:hover {
-  filter: blur(0);
-}
-
-@media screen and (max-width: 600px) {
-  .u-list {
-    display: block;
-    gap: 5%;
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+  .ul:hover .no-blur {
+    filter: blur(5px);
+    transition: 0.5s ease-in-out;
   }
 
-  .li {
-    margin: 20px 0;
+  .ul .no-blur:hover {
+    filter: blur(0);
+  }
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
+  .ul:hover .no-blur {
+    filter: blur(5px);
+    transition: 0.5s ease-in-out;
+  }
+
+  .ul .no-blur:hover {
+    filter: blur(0);
   }
 }

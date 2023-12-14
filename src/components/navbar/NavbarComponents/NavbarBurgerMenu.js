@@ -1,22 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./NavbarBurgerMenu.css";
 
-const NavbarBurgerMenu = () => {
-  const [openBurgerMenu, setOpenBurgerMenu] = useState(true);
-
-  const burgerMenuHandler = () => {
-    setOpenBurgerMenu(!openBurgerMenu);
-  };
+const NavbarBurgerMenu = (props) => {
+  const resize = props.onOpenBurgerMenu ? "one resize" : "one two";
+  const deleted = props.onOpenBurgerMenu ? "one delete" : "one three";
 
   return (
-    <div className="burger-menu-wraper">
-      <li className="burger-menu" onClick={burgerMenuHandler}>
-        <span className="one"></span>
-        <span className="one two"></span>
-        <span className="one three"></span>
-      </li>
-    </div>
+    <li className="burger-menu">
+      <span className="one"></span>
+      <span className={resize}></span>
+      <span className={deleted}></span>
+    </li>
   );
 };
 

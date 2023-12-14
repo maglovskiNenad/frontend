@@ -1,7 +1,6 @@
+/* Stilovi za mobilni */
 .navbar-wraper {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
+  display: block;
   backdrop-filter: blur(10px);
   position: sticky;
 }
@@ -10,4 +9,48 @@
   border-bottom: solid;
   border-image: linear-gradient(to right, darkblue, darkorchid) 2;
   border-width: 4px;
+}
+
+.navbar-navigations-menu {
+  margin: auto;
+}
+
+.navbar-components-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list-wraper {
+  margin: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dropdown-menu_none {
+  display: none;
+}
+
+.dropdown-menu_block {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
 }

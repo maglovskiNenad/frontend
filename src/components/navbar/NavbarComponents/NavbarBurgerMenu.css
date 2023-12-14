@@ -1,27 +1,59 @@
-@media screen and (max-width: 600px) {
+.burger-menu {
+  visibility: none;
+  display: block;
+  justify-content: center;
+  margin: 2em;
+}
+
+.one {
+  position: absolute;
+  width: 32px;
+  height: 3.5px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.two {
+  width: 18px;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.three {
+  width: 23px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.resize {
+  width: 32px;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.delete {
+  width: 0px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
   .burger-menu {
-    visibility: none;
-    display: block;
-    justify-content: center;
-    padding: 1.2px;
-    margin: 30px 0 0 0;
-    width: 35px;
-    height: 32px;
+    display: none;
   }
+}
 
-  .one {
-    position: absolute;
-    width: 30px;
-    height: 5px;
-    background-color: gray;
-    border-radius: 5px;
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+  .burger-menu {
+    display: none;
   }
+}
 
-  .two {
-    margin-top: 10px;
-  }
-
-  .three {
-    margin-top: 20px;
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
+  .burger-menu {
+    display: none;
   }
 }

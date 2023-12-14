@@ -6,7 +6,7 @@ import "./NavbarList.css";
 
 const NavbarList = () => {
   const NAVBAR_LIST = (
-    <React.Fragment>
+    <ul className="ul">
       <li className="li">
         <Link to={"/"} className="element animtaion no-blur">
           Home
@@ -27,16 +27,10 @@ const NavbarList = () => {
           Creators
         </Link>
       </li>
-    </React.Fragment>
+    </ul>
   );
 
-  return (
-    <div className="nav-fragment">
-      <div className="nav">
-        <div className="u-list">{NAVBAR_LIST}</div>
-      </div>
-    </div>
-  );
+  return <React.Fragment>{NAVBAR_LIST}</React.Fragment>;
 };
 
 export default NavbarList;
