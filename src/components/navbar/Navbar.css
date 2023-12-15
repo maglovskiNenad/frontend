@@ -2,7 +2,6 @@
 .navbar-wraper {
   display: block;
   backdrop-filter: blur(10px);
-  position: sticky;
 }
 
 .border {
@@ -45,6 +44,12 @@
 
 /* Stilovi za tablet */
 @media screen and (min-width: 30em) {
+  .navbar-wraper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 /* Stilovi za desktop */

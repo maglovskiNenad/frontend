@@ -17,6 +17,10 @@
 
 /* Stilovi za tablet */
 @media screen and (min-width: 30em) {
+  .btn {
+    margin-top: 1em;
+    padding: 1em;
+  }
 }
 
 /* Stilovi za desktop */
