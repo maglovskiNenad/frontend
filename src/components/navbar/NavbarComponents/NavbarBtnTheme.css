@@ -2,17 +2,17 @@
 .btn {
   display: flex;
   justify-content: center;
-  margin-top: 1.2em;
+  margin-top: 1.1em;
 }
 
 .moon {
   font-size: 20px;
-  margin: 0 10px;
+  margin: 1px 5px;
 }
 
 .sun {
   font-size: 25px;
-  margin-left: -15px;
+  margin-left: -18px;
 }
 
 /* Stilovi za tablet */
@@ -20,6 +20,15 @@
   .btn {
     margin-top: 1em;
     padding: 1em;
+  }
+  .moon {
+    font-size: 20px;
+    margin: 1px 4px;
+  }
+
+  .sun {
+    font-size: 25px;
+    margin-left: -18px;
   }
 }
 

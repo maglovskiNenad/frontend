@@ -21,7 +21,12 @@ li {
 @media screen and (min-width: 30em) {
   .ul {
     display: flex;
-    gap: 5%;
+    gap: 3%;
+    letter-spacing: 1px;
+  }
+
+  .element {
+    font-size: 0.8em;
   }
 }
 
@@ -34,6 +39,10 @@ li {
 
   .ul .no-blur:hover {
     filter: blur(0);
+  }
+
+  .element {
+    font-size: 2em;
   }
 }
 
