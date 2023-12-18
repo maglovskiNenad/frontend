@@ -18,13 +18,13 @@ const NavbarList = () => {
         </Link>
       </li>
       <li className="li">
-        <Link to={"/components"} className="element animtaion no-blur">
-          Components
+        <Link to={"/creators"} className="element animtaion no-blur">
+          Creators
         </Link>
       </li>
       <li className="li">
-        <Link to={"/creators"} className="element animtaion no-blur">
-          Creators
+        <Link to={"/blog"} className="element animtaion no-blur">
+          Blog
         </Link>
       </li>
     </ul>

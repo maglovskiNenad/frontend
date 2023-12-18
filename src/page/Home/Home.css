@@ -1,23 +1,27 @@
+/* Stilovi za mobilni */
+
 .home-page-wraper {
-  width: 90%;
+  width: 75%;
   word-break: keep-all;
+  margin: auto;
+  padding: 0;
 }
 
 .home-title {
   width: 100%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 900;
 }
 
 .title {
   text-align: center;
-  font-size: 2em;
+  font-size: 0.8em;
 }
 
 .home-text {
   text-align: left;
   letter-spacing: 1px;
-  font-size: 1.5em;
+  font-size: 0.7em;
 }
 
 .gradient-color {
@@ -37,36 +41,67 @@
   animation-direction: alternate;
 }
 
+/* Animacija lopte koja se prikazuje na glavnom home page-u */
 @keyframes ball {
   from {
-    top: 25%;
+    top: 15%;
     transform: scaleX(79.5%) scaleY(65%);
   }
   to {
-    top: 55%;
+    top: 35%;
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Stilobi za tablet */
+@media screen and (min-width: 30em) {
   .home-page-wraper {
-    width: 75%;
-    margin: auto;
-    padding: 0;
+    width: 85%;
   }
+
   .title {
-    font-size: 1em;
+    font-size: 2em;
   }
+
   .home-text {
-    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-size: 1.2em;
   }
 
   @keyframes ball {
     from {
-      top: 15%;
-      transform: scaleX(79.5%) scaleY(65%);
+      top: 25%;
     }
     to {
-      top: 35%;
+      top: 55%;
     }
   }
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+  .home-page-wraper {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .home-text {
+    letter-spacing: 2px;
+    font-size: 1.7em;
+  }
+
+  @keyframes ball {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 55%;
+    }
+  }
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
 }

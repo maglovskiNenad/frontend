@@ -1,0 +1,25 @@
+/* Stilovi za mobilni */
+.about-page {
+  width: 75%;
+  word-break: keep-all;
+  margin: auto;
+  padding: 0;
+}
+
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
+  .about-page {
+    width: 85%;
+  }
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+  .about-page {
+    width: 95%;
+  }
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
+}
