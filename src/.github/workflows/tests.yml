@@ -1,0 +1,41 @@
+name: Create Branch and Require Approval for Merge
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  create_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Create New Branch
+        run: |
+          NEW_BRANCH="feature-branch-$(date + '%Y%m%d%H%M%S')"
+          git checkout -d $NEW_BRANCH
+          git push origin $ $NEW_BRANCH
+
+  check_merge_permission:
+    needs: create_branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Merge Permissions
+        run: |
+          if ! gh pr merge --check "$NEW_BRANCH" --base main --repo owner/repo; then
+            echo "Branch cant't be merged wirhout aprroval"
+            exit 1
+          fi
+
+  merge_branch:
+    needs: check_merge_permission
+    runs-on: latest-ubuntu
+    steps:
+      - name: Merge Branch
+        run: |
+          git checkout main
+          git merge $NEW_Branch
+          git push origin main
