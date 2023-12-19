@@ -1,0 +1,29 @@
+/* Stilovi za mobilni */
+.footer-wraper {
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.footer-description {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+.copy {
+  font-size: small;
+}
+
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
+}
