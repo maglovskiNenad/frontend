@@ -1,8 +1,9 @@
+/* Stilovi za mobilni */
 .ticket-visual_visual {
-  width: 80%;
-  padding: 5px;
+  width: 85%;
+  padding: 15px;
   border: 1px solid white;
-  margin: 150px auto;
+  margin: 60px auto;
   position: relative;
   transition: all 500ms cubic-bezier(0.03, 0.98, 0.53, 0.99) 0s;
   border-style: solid;
@@ -13,8 +14,7 @@
 .ticket-visual-wrapper {
   width: 100%;
   border-radius: 15px;
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
 }
 .nenad-creator {
   width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .creator-num-one {
-  width: 35%;
+  width: 60%;
   border: 2px solid;
   border-radius: 50%;
   margin: 10px 0;
@@ -36,8 +36,7 @@
 }
 
 .creator-num-two {
-  width: 32%;
-
+  width: 52%;
   border: 2px solid;
   border-radius: 50%;
 }
@@ -49,40 +48,59 @@
 }
 
 .name {
-  font-size: 2em;
+  font-size: 0.9em;
+  word-break: break-all;
 }
 
 .role {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 .contact-icons {
   display: flex;
   gap: 2%;
-  font-size: 2em;
+  font-size: 1em;
   justify-content: center;
   margin: 15px 0;
 }
 
-@media screen and (max-width: 600px) {
-  .ticket-visual_visual {
-    width: 200px;
-    height: 320px;
-  }
-
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
   .ticket-visual-wrapper {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
   }
 
   .name {
-    font-size: 1em;
+    font-size: 0.75em;
   }
 
   .role {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .contact-icons {
     font-size: 1em;
   }
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+  .name {
+    font-size: 1.5em;
+  }
+
+  .role {
+    font-size: 1em;
+  }
+
+  .contact-icons {
+    font-size: 1.5em;
+  }
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
 }
