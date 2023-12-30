@@ -26,7 +26,7 @@ function App() {
         <Fade right duration={1500}>
           <div className="routes">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<ErrorPage />} />
               <Route path="*" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/creators" element={<Creators />} />

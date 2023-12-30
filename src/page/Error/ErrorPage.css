@@ -15,6 +15,10 @@
   letter-spacing: 3px;
 }
 
+.number::after {
+  content: "";
+}
+
 .number {
   font-size: 100px;
   border-bottom: 2px solid white;
@@ -24,13 +28,14 @@
 
 /* btn animation for take me back btn */
 .error-btn-wraper {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .error-btn {
-  margin: auto;
   all: unset;
-  width: 65%;
+  width: 150px;
   height: 30px;
   font-size: 16px;
   background: transparent;
@@ -49,6 +54,7 @@
   touch-action: manipulation;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin: 5px 35px 0px 0px;
 }
 
 .error-btn::after,
@@ -99,10 +105,18 @@
 
 /* Stilovi za tablet */
 @media screen and (min-width: 30em) {
+  .error-btn {
+    width: 180px;
+    margin: 5px 75px 0px 0px;
+  }
 }
 
 /* Stilovi za desktop */
 @media screen and (min-width: 64em) {
+  .error-btn {
+    width: 250px;
+    margin: 5px 150px 0px 0px;
+  }
 }
 
 /* Stilovi za pejzaznu orjentaciju */
