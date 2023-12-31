@@ -1,3 +1,30 @@
-.main-page-navbar {
+.side-navbar-wraper {
+  height: 100vh;
   border: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+.side-navbar {
+  text-align: center;
+}
+
+.section {
+  margin: 25px 8px;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.section:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  color: gray;
+}
+
+.showSideNavbar {
+  display: block;
+}
+
+.hideSideNavbar {
+  display: none;
 }

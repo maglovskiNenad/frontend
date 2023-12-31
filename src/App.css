@@ -1,20 +1,6 @@
-.App {
-}
-
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.main-navbar {
-  width: 10%;
-}
-
-.routes {
-  width: 80%;
 }

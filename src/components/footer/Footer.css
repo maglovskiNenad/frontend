@@ -18,6 +18,9 @@
 
 /* Stilovi za tablet */
 @media screen and (min-width: 30em) {
+  .footer-wraper {
+    bottom: 5px;
+  }
 }
 
 /* Stilovi za desktop */

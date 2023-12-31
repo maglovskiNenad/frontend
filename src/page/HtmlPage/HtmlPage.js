@@ -28,6 +28,8 @@ const HtmlPage = () => {
     </div>
   );
 
+  console.log(description, text);
+
   return (
     <div className="main-html-wraper">
       <p>html page</p>

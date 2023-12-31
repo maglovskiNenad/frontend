@@ -6,12 +6,12 @@ const ErrorPage = () => {
 
   const takeMeBackHandler = () => {
     navigate("/home");
-    console.log("radi");
   };
   return (
     <div className="error-page">
       <div className="error-text">
         <p className="text number">404</p>
+        <hr className="hr" />
         <p className="text">
           <span className="sorry">sorry</span>,we couldn't find that page
         </p>
