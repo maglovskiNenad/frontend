@@ -9,17 +9,20 @@ const MainPageNavbar = () => {
     setSideNavbar(!sideNavbar);
   };
 
-  const conditionSideNavbar = sideNavbar
-    ? "side-navbar-wraper showSideNavbar"
-    : "side-navbar-wraper hideSideNavbar";
+  const conditionShowNavbar = sideNavbar
+    ? "side-navbar-wraper hideNavbar"
+    : "side-navbar-wraper showNavbar";
 
   return (
-    <div className={conditionSideNavbar} onClick={sideNavbarHandler}>
-      <div className="side-navbar">
-        <p className="section">HTML</p>
-        <p className="section">CSS</p>
-        <p className="section">JS</p>
-      </div>
+    <div className={conditionShowNavbar}>
+      <ul className="side-navbar">
+        <button className="side-btn" onClick={sideNavbarHandler}>
+          <span className="line"></span>
+        </button>
+        <li className="section">HTML</li>
+        <li className="section">CSS</li>
+        <li className="section">JS</li>
+      </ul>
     </div>
   );
 };

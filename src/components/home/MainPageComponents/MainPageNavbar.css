@@ -1,30 +1,68 @@
+/* Stilovi za mobilni */
+
 .side-navbar-wraper {
   height: 100vh;
-  border: 1px solid white;
-  margin: 0;
-  padding: 0;
+  width: 90px;
 }
 
 .side-navbar {
-  text-align: center;
+  text-align: left;
 }
 
 .section {
-  margin: 25px 8px;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 12px;
+  width: 100%;
+  margin: 20px auto;
+  transform: translateX(-20px);
 }
 
 .section:hover {
-  transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   color: gray;
 }
 
-.showSideNavbar {
-  display: block;
+.side-btn {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid gray;
+  right: -1px;
+  top: 1px;
+  width: 20px;
+  height: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+  background-color: black;
 }
 
-.hideSideNavbar {
-  display: none;
+.line {
+  position: absolute;
+  top: 20%;
+  right: 45%;
+  width: 3px;
+  height: 25px;
+  background-color: gray;
+}
+
+.showNavbar {
+  transform: translateX(-68px);
+  transition: all 0.5s ease-in-out;
+}
+
+.hideNavbar {
+  transform: translateX(0px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Stilovi za tablet */
+@media screen and (min-width: 30em) {
+}
+
+/* Stilovi za desktop */
+@media screen and (min-width: 64em) {
+}
+
+/* Stilovi za pejzaznu orjentaciju */
+@media screen and(orientation: landscape) {
 }

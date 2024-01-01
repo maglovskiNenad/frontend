@@ -27,7 +27,7 @@ const HtmlPage = () => {
       })}
     </div>
   );
-
+  // Ovo treba skloniti blagovremeno
   console.log(description, text);
 
   return (
