@@ -12,6 +12,7 @@ import { Fade } from "react-reveal";
 
 import "./App.css";
 import ErrorPage from "./page/Error/ErrorPage";
+import HtmlPage from "./page/HtmlPage/HtmlPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/creators" element={<Creators />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/html" element={<HtmlPage />} />
               <Route component={<ErrorPage />} />
             </Routes>
           </div>

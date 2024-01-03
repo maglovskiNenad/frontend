@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./MainPageNavbar.css";
+import { Link } from "react-router-dom";
 
 const MainPageNavbar = () => {
   const [sideNavbar, setSideNavbar] = useState(true);
@@ -19,7 +20,9 @@ const MainPageNavbar = () => {
         <button className="side-btn" onClick={sideNavbarHandler}>
           <span className="line"></span>
         </button>
-        <li className="section">HTML</li>
+        <Link to="/html" className="section">
+          HTML
+        </Link>
         <li className="section">CSS</li>
         <li className="section">JS</li>
       </ul>
